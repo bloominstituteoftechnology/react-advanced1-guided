@@ -13,12 +13,7 @@ const URL = 'http://localhost:9000/api/quotes'
 export default class ClassComponents extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      quotes: [{ author: 'Gabe', text: 'Do not troll Gabe', id: 'xyz' }],
-      error: 'No error, everything is cool!',
-      textInput: '',
-      authorInput: '',
-    }
+    this.state = initialState
   }
 
   // state = initialState
