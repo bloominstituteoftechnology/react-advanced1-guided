@@ -1,13 +1,5 @@
 import React from 'react'
 
-class Car {
-  drive() {
-
-  }
-
-  odometer = 0
-}
-
 export default class QuoteForm extends React.Component {
   onSubmit = evt => {
     evt.preventDefault()
