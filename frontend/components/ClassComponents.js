@@ -20,7 +20,7 @@ export default class ClassComponents extends React.Component {
 
   render() {
     return (
-      <div>foobar</div>
+      <div>{this.state.error}</div>
     )
   }
 }
