@@ -26,7 +26,7 @@ export default class ClassComponents extends React.Component {
   componentDidMount() {
     axios.get(URL)
       .then(res => {
-        setState({ ...state, quotes: res.data.quotes })
+        this.setState({ ...this.state, quotes: res.data.quotes })
       })
       .catch(onError)
   }
