@@ -8,7 +8,7 @@ const initialState = {
   textInput: '',
   authorInput: '',
 }
-const URL = 'http://localhost:9000/api/quotesZZZZ'
+const URL = 'http://localhost:9000/api/quotes'
 
 export default class ClassComponents extends React.Component {
   constructor(props) {
@@ -32,8 +32,14 @@ export default class ClassComponents extends React.Component {
   }
 
   onDelete = id => evt => {
-    
+
   }
+
+  onSubmit = () => {
+
+  }
+
+  on
 
   render() {
     return (
