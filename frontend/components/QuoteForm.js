@@ -13,20 +13,20 @@ export default class QuoteForm extends React.Component { // only in class compon
 
   render() {
     return (
-      <form onSubmit={onSubmit}>
+      <form onSubmit={this.onSubmit}>
         <input
           type="text"
           id="textInput"
           placeholder="type text"
           value={this.props.textInput}
-          onChange={onChange}
+          onChange={this.onChange}
         />
         <input
           type="text"
           id="authorInput"
           placeholder="type author"
           value={this.props.authorInput}
-          onChange={onChange}
+          onChange={this.onChange}
         />
         <input type="submit" />
       </form>
