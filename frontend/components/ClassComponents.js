@@ -16,7 +16,7 @@ export default class ClassComponents extends React.Component {
     this.state = initialState
   }
 
-  // state = initialState // t
+  // state = initialState // you can do this instead of the constructor thing
 
   onError = err => {
     const errorFromAPI = err.response.data.message
