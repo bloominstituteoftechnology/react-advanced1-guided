@@ -28,7 +28,7 @@ export default class ClassComponents extends React.Component {
       .then(res => {
         this.setState({ ...this.state, quotes: res.data.quotes })
       })
-      .catch(onError)
+      .catch(this.onError)
   }
 
   render() {
