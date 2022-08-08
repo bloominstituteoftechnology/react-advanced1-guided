@@ -2,18 +2,25 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Form from './QuoteForm'
 
-const initialState = {
-  quotes: [{ author: 'Gabe', text: 'Do not troll Gabe', id: 'xyz' }],
-  error: 'No error, everything is cool!',
-  textInput: '',
-  authorInput: '',
-}
 const URL = 'http://localhost:9000/api/quotes'
 
 export default class ClassComponents extends React.Component {
   constructor(props) {
     super(props)
-    this.state = initialState
+    this.state = {
+      quotes: [{ author: 'Gabe', text: 'Do not troll Gabe', id: 'xyz' }],
+      error: 'No error, everything is cool!',
+      textInput: '',
+      authorInput: '',
+      authorInput: '',
+      authorInput: '',
+      authorInput: '',
+      authorInput: '',
+      authorInput: '',
+      authorInput: '',
+      authorInput: '',
+      authorInput: '',
+    }
   }
 
   // state = initialState
