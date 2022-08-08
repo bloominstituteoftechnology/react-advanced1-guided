@@ -2,10 +2,9 @@ import React from 'react'
 
 export default class QuoteForm extends React.Component {
   onSubmit = evt => {
-    evt.preventDefault();
+    evt.preventDefault()
     this.props.onSubmit()
   }
-
 
   onChange = evt => {
     const { value, id } = evt.target
