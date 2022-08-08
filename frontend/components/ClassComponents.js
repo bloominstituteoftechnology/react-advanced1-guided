@@ -10,7 +10,7 @@ const initialState = {
 }
 const URL = 'http://localhost:9000/api/quotes'
 
-export default function ClassComponents() {
+function Foo() {
   const [state, setState] = useState(initialState)
 
   const onError = err => {
