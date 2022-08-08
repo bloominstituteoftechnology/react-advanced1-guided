@@ -40,14 +40,14 @@ export default class ClassComponents extends React.Component {
           {
             this.state.quotes.map(qo => (
               <li key={qo.id}>
-                {qo.text} ({qo.author}) <button onClick={onDelete(qo.id)}>del</button>
+                {qo.text} ({qo.author}) <button onClick={this.onDelete(qo.id)}>del</button>
               </li>
             ))
           }
         </ul>
         <Form
-          onSubmit={onSubmit}
-          onChange={onChange}
+          onSubmit={this.onSubmit}
+          onChange={this.onChange}
           textInput={this.state.textInput}
           authorInput={this.state.authorInput}
         />
