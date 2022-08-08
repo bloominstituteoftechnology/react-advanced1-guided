@@ -13,9 +13,12 @@ const URL = 'http://localhost:9000/api/quoteszzz'
 export default function ClassComponents() {
   const [state, setState] = useState(initialState)
 
+  const [error, setError] = useState('')
+
   const onError = err => {
     const errorFromAPI = err.response.data.message
     setState({ ...state, error: errorFromAPI })
+    setError(errorFromAPI)
   }
 
   useEffect(() => {
