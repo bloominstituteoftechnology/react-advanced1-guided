@@ -32,7 +32,7 @@ export default class ClassComponents extends React.Component {
   }
 
   onDelete = id => evt => {
-
+    // fix this!!!!!!!!!!!!!!!!!!!!!
   }
 
   onSubmit = () => {
