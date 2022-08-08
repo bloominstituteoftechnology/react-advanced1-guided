@@ -32,7 +32,16 @@ export default class ClassComponents extends React.Component {
   }
 
   onDelete = id => evt => {
-    // fix this!!!!!!!!!!!!!!!!!!!!!
+    axios.delete(`${URL}/${id}`)
+      .then(res => { // eslint-disable-line
+        this.setState({
+          ...this.state,
+          quotes: this.state.quotes.filter(qo => {
+            return qo.id !== id
+          })
+        })
+      })
+      .catch(this.onError)
   }
 
   onSubmit = () => {
