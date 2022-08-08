@@ -11,7 +11,8 @@ const initialState = {
 const URL = 'http://localhost:9000/api/quotes'
 
 export default class ClassComponents extends React.Component {
-  constructor() {
+  constructor(props) {
+    super(props)
     this.state = initialState
   }
 
