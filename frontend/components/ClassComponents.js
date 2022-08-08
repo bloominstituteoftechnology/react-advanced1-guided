@@ -39,8 +39,8 @@ export default class ClassComponents extends React.Component {
 
   }
 
-  onChange = () => {
-
+  onChange = (id, value) => {
+    this.setState({ ...this.state, [id]: value })
   }
 
   render() {
