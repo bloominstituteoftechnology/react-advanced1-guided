@@ -51,6 +51,7 @@ export default function ClassComponent() {
       })
       .catch(onError)
   }
+
   return (
     <div>
       <div id="error">Error: {state.error}</div>
