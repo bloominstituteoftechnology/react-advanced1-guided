@@ -8,7 +8,7 @@ const initialState = {
   textInput: '',
   authorInput: '',
 }
-const URL = 'http://localhost:9000/api/quotes'
+const URL = 'http://localhost:9000/api/quotesZZZZ'
 
 export default class ClassComponents extends React.Component {
   constructor(props) {
