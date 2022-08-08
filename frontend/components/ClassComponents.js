@@ -59,7 +59,9 @@ export default function ClassComponent() {
       <ul>
         {
           state.quotes.map(qo => (
-            <li key={qo.id}>{qo.author} sayz {qo.text} <button onClick={onDelete(qo.id)}>del</button></li>
+            <li key={qo.id}>
+              {qo.text} ({qo.author}) <button onClick={onDelete(qo.id)}>del</button>
+            </li>
           ))
         }
       </ul>

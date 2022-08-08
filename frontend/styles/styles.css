@@ -18,12 +18,14 @@ body::after {
 body, input, button {
   font-family: 'Titillium Web', sans-serif;
   color: #484848;
+  margin-right: 0.5rem;
 }
 
 #root, #wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
 }
 
 h1, h2, h3 {
@@ -60,17 +62,26 @@ nav a {
   color: #484848;
 }
 
-nav a.active {
-  color: #ff4b00;
-}
+/* nav a.active {
+  color:red
+} */
 
 #error {
   color: red;
   margin: 1rem 0 1rem 0;
+  font-size: 0.75rem;
 }
 
 ul, form {
   margin: 1rem 0 2rem 0;
+}
+
+li {
+  margin: 0.75rem;
+  border: 1px solid grey;
+  padding: 0.5rem;
+  line-height: 1.5rem;
+  border-radius: 0.5rem;
 }
 
 .todo {

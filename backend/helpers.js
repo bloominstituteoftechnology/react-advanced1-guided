@@ -6,18 +6,18 @@ const resetQuotes = () => {
   quotes = [
     {
       id: nanoid(5),
-      author: 'Dr. Seuss',
-      text: "Don't cry because it's over, smile because it happened.",
+      author: 'Stephanie Kwolek, Chemist',
+      text: "All sorts of things can happen when you’re open to new ideas and playing around with things.",
     },
     {
       id: nanoid(5),
-      author: 'Frank Zappa',
-      text: "So many books, so little time.",
+      author: 'Rachel Carson, Marine Biologist',
+      text: "The more clearly we can focus our attention on the wonders and realities of the universe about us, the less taste we shall have for destruction.",
     },
     {
       id: nanoid(5),
-      author: 'Oscar Wilde',
-      text: "Be yourself, everyone else is already taken.",
+      author: 'Baroness Susan Greenfield, Neuroscientist',
+      text: "As always in life, people want a simple answer... and it’s always wrong.",
     },
   ]
 }
