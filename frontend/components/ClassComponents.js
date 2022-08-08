@@ -41,7 +41,7 @@ export default class ClassComponents extends React.Component {
       .then(res => {
         this.setState({ ...this.state, quotes: this.state.quotes.concat(res.data.new_quote) })
       })
-      .catch(onError)
+      .catch(this.onError)
   }
 
   onChange = (id, value) => {
