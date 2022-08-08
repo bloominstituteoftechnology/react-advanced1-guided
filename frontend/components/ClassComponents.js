@@ -39,7 +39,9 @@ export default class ClassComponents extends React.Component {
 
   }
 
-  onChange = evt => {}
+  onChange = () => {
+
+  }
 
   render() {
     return (
