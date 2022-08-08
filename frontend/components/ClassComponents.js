@@ -14,7 +14,6 @@ export default function ClassComponents() {
   const [state, setState] = useState(initialState)
 
   const onError = err => {
-    debugger
     const errorFromAPI = err.response.data.message
     setState({ ...state, error: errorFromAPI })
   }
