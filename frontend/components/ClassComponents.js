@@ -36,10 +36,10 @@ export default class ClassComponents extends React.Component {
   }
 
   onSubmit = () => {
-    const payloadToSend = { author: state.authorInput, text: state.textInput }
+    const payloadToSend = { author: this.state.authorInput, text: this.state.textInput }
     axios.post(URL, payloadToSend)
       .then(res => {
-        setState({ ...state, quotes: state.quotes.concat(res.data.new_quote) })
+        this.setState({ ...this.state, quotes: this.state.quotes.concat(res.data.new_quote) })
       })
       .catch(onError)
   }
