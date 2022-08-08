@@ -32,7 +32,7 @@ export default class ClassComponents extends React.Component {
       .catch(this.onError)
   }
 
-  onDelete = id => evt => {
+  onDelete = id => evt => { // eslint-disable-line
     axios.delete(`${URL}/${id}`)
       .then(res => { // eslint-disable-line
         this.setState({
