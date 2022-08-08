@@ -10,7 +10,7 @@ const initialState = {
 }
 const URL = 'http://localhost:9000/api/quotes'
 
-export default function ClassComponent(props) {
+export default function ClassComponent() {
   const [state, setState] = useState(initialState)
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function ClassComponent(props) {
 
   const onError = err => {
     const errorFromAPI = err.response.data.message
-    setState({ state, error: errorFromAPI })
+    setState({ ...state, error: errorFromAPI })
   }
 
   const onChange = (id, value) => {
