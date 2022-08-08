@@ -18,6 +18,11 @@ export default class ClassComponents extends React.Component {
 
   // state = initialState
 
+  onError = err => {
+    const errorFromAPI = err.response.data.message
+    setState({ ...state, error: errorFromAPI })
+  }
+
   render() {
     return (
       <div>{this.state.error}</div>
