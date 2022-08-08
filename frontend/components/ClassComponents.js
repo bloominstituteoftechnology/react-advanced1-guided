@@ -23,6 +23,7 @@ export default class ClassComponents extends React.Component {
     const errorFromAPI = err.response.data.message
     this.setState({ ...this.state, error: errorFromAPI })
   }
+
   componentDidMount() {
     axios.get(URL)
       .then(res => {
@@ -30,7 +31,6 @@ export default class ClassComponents extends React.Component {
       })
       .catch(this.onError)
   }
-
 
   onDelete = id => evt => {
     axios.delete(`${URL}/${id}`)
