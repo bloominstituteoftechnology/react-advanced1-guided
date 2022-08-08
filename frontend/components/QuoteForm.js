@@ -7,6 +7,7 @@ export default function QuoteForm(props) {
   }
 
   const onChange = evt => {
+    debugger
     const { value, id } = evt.target
     props.onChange(id, value)
   }
