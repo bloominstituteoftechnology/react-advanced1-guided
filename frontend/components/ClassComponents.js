@@ -10,7 +10,9 @@ const initialState = {
 }
 const URL = 'http://localhost:9000/api/quotes'
 
-export default class ClassCom
+export default class ClassComponents extends React.Component {
+  
+}
 
 function Foo() {
   const [state, setState] = useState(initialState)
