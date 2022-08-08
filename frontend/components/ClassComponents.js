@@ -34,11 +34,11 @@ export default class ClassComponents extends React.Component {
   render() {
     return (
       <div>
-        <div id="error">Error: {state.error}</div>
+        <div id="error">Error: {this.state.error}</div>
         <div>Quotes:</div>
         <ul>
           {
-            state.quotes.map(qo => (
+            this.state.quotes.map(qo => (
               <li key={qo.id}>
                 {qo.text} ({qo.author}) <button onClick={onDelete(qo.id)}>del</button>
               </li>
@@ -48,8 +48,8 @@ export default class ClassComponents extends React.Component {
         <Form
           onSubmit={onSubmit}
           onChange={onChange}
-          textInput={state.textInput}
-          authorInput={state.authorInput}
+          textInput={this.state.textInput}
+          authorInput={this.state.authorInput}
         />
       </div>
     )
