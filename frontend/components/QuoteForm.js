@@ -8,7 +8,7 @@ export default class QuoteForm extends React.Component { // only in class compon
 
   onChange = evt => {
     const { value, id } = evt.target
-    props.onChange(id, value)
+    this.props.onChange(id, value)
   }
 
   render() {
@@ -18,14 +18,14 @@ export default class QuoteForm extends React.Component { // only in class compon
           type="text"
           id="textInput"
           placeholder="type text"
-          value={props.textInput}
+          value={this.props.textInput}
           onChange={onChange}
         />
         <input
           type="text"
           id="authorInput"
           placeholder="type author"
-          value={props.authorInput}
+          value={this.props.authorInput}
           onChange={onChange}
         />
         <input type="submit" />
