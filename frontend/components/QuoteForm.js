@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class e QuoteForm(props) {
+export default class QuoteForm extends React.Component {
   const onSubmit = evt => {
     evt.preventDefault()
     props.onSubmit()
