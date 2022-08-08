@@ -3,7 +3,7 @@ import React from 'react'
 export default class QuoteForm extends React.Component { // only in class components
   onSubmit = evt => {
     evt.preventDefault()
-    props.onSubmit()
+    this.props.onSubmit()
   }
 
   onChange = evt => {
