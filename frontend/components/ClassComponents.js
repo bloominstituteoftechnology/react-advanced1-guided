@@ -12,7 +12,7 @@ const URL = 'http://localhost:9000/api/quotes'
 
 export default class ClassComponents extends React.Component {
   render() {
-    return 'foo'
+    return <div>foobar</div>
   }
 }
 
