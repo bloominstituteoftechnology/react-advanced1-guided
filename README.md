@@ -1,4 +1,4 @@
-# Advanced React Guided Projects
+# Class Components
 
 ## Scripts
 
