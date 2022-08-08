@@ -8,7 +8,7 @@ const initialState = {
   textInput: '',
   authorInput: '',
 }
-const URL = 'http://localhost:9000/api/quoteszzz'
+const URL = 'http://localhost:9000/api/quotes'
 
 export default function ClassComponents() {
   const [state, setState] = useState(initialState)
