@@ -13,6 +13,11 @@ const URL = 'http://localhost:9000/api/quotes'
 export default function ClassComponent() {
   const [state, setState] = useState(initialState)
 
+  const onError = err => {
+    const errorFromAPI = err.response.data.message
+    setState({ ...state, error: errorFromAPI })
+  }
+
   useEffect(() => {
     axios.get(URL)
       .then(res => {
@@ -20,11 +25,6 @@ export default function ClassComponent() {
       })
       .catch(onError)
   }, [])
-
-  const onError = err => {
-    const errorFromAPI = err.response.data.message
-    setState({ ...state, error: errorFromAPI })
-  }
 
   const onChange = (id, value) => {
     setState({ ...state, [id]: value })
