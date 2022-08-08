@@ -16,6 +16,8 @@ export default class ClassComponents extends React.Component {
     this.state = initialState
   }
 
+  // state = initialState
+
   render() {
     return (
       <div>foobar</div>
