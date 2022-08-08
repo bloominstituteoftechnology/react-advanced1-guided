@@ -23,6 +23,10 @@ export default class ClassComponents extends React.Component {
     this.setState({ ...this.state, error: errorFromAPI })
   }
 
+  componentDidMount() {
+    
+  }
+
   render() {
     return (
       <div>{this.state.error}</div>
