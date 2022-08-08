@@ -31,6 +31,10 @@ export default class ClassComponents extends React.Component {
       .catch(this.onError)
   }
 
+  onDelete = id => evt => {
+    
+  }
+
   render() {
     return (
       <div>
