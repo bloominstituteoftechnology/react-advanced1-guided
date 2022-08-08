@@ -12,8 +12,8 @@ const URL = 'http://localhost:9000/api/quotes'
 
 export default class ClassComponents extends React.Component {
 
-  constructor() {
-    
+  constructor(odometer) {
+    this.odometer = odometer
   }
 
   render() {
